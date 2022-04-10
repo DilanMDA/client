@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { Menu } from "antd";
-import { MailOutlined, SettingOutlined } from "@ant-design/icons";
+import { HomeOutlined, SettingOutlined } from "@ant-design/icons";
 
 const { SubMenu } = Menu;
 
 const Header = () => {
-  const [current, setCurrent] = useState("");
-  const handleClick = () => {
-    // this is handleClick function
+  const [current, setCurrent] = useState("home");
+  const handleClick = (event) => {
+    // console.log(e.key);
+    setCurrent(event.key);
   };
   return (
     <Menu onClick={handleClick} selectedKeys={[current]} mode='horizontal'>
-      <Menu.Item key='mail' icon={<MailOutlined />}>
+      <Menu.Item key='home' icon={<HomeOutlined />}>
         Home
       </Menu.Item>
       <SubMenu
