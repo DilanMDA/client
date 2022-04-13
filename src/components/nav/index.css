@@ -1,0 +1,19 @@
+.Menu {
+  position: "relative";
+  display: "flex";
+  justify-content: "space-between";
+  background-color: "#f0f7fa";
+  border-color: "#c8cbcc";
+  margin: "0 10px";
+  border-radius: "5px";
+}
+
+.item {
+  background-color: red;
+  border-radius: 10px;
+  float: end;
+}
+
+.login {
+  background-color: yellow;
+}
