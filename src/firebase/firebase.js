@@ -7,6 +7,7 @@ import * as firebase from "firebase";
 const firebaseConfig = {
   apiKey: "AIzaSyC0mzEGebltOCBII8T9gjoal_X1uXQ74D0",
   authDomain: "ecommerce-akila.firebaseapp.com",
+  databaseURL: "https://ecommerce-akila-default-rtdb.firebaseio.com",
   projectId: "ecommerce-akila",
   storageBucket: "ecommerce-akila.appspot.com",
   messagingSenderId: "303335005299",
@@ -19,4 +20,5 @@ firebase.initializeApp(firebaseConfig);
 // export
 export const auth = firebase.auth();
 
+// This is allow us to google login with Google details
 export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
