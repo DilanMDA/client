@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Menu } from "antd";
 import {
   HomeOutlined,
-  SettingOutlined,
   UserAddOutlined,
   UserOutlined,
 } from "@ant-design/icons";
@@ -36,20 +35,23 @@ const AppHeader = () => {
       <Menu.Item key='home' icon={<HomeOutlined />}>
         <Link to='/'>Home</Link>
       </Menu.Item>
-      <SubMenu
+      <Menu.Item key='about' icon={<HomeOutlined />}>
+        <Link to='/'>About</Link>
+      </Menu.Item>
+      {/* <SubMenu
         key='SubMenu1'
         icon={<SettingOutlined />}
         title='Navigation Three - Submenu'>
         <Menu.Item key='setting:1'>Option 1</Menu.Item>
         <Menu.Item key='setting:2'>Option 2</Menu.Item>
-      </SubMenu>
-      <SubMenu
+      </SubMenu> */}
+      {/* <SubMenu
         key='SubMenu2'
         icon={<SettingOutlined />}
         title='Navigation Three - Submenu'>
         <Menu.Item key='setting:1'>Option 1</Menu.Item>
         <Menu.Item key='setting:2'>Option 2</Menu.Item>
-      </SubMenu>
+      </SubMenu> */}
       <Menu.Item key='search' icon={<HomeOutlined />}>
         Search
       </Menu.Item>
